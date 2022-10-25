@@ -7,20 +7,17 @@
 .slideshow {
   display: flex;
   align-items: center;
-
   border-radius: 25px;
   margin-bottom: 20px;
 }
 
 .arrowleft {
   height: 20px;
-  background-color: blueviolet;
   position: relative;
   right: -20px;
 }
 .arrowright {
   height: 20px;
-  background-color: blueviolet;
   position: relative;
   left: -20px;
 }
@@ -30,14 +27,20 @@
     height: 415px;
   }
 
+  .slideshow {
+    justify-content: center;
+  }
+
   .arrowleft {
     position: relative;
-    right: -50px;
+    right: -70px;
     cursor: pointer;
+    height:7rem;
   }
   .arrowright {
     position: relative;
-    left: -50px;
+    left: -70px;
     cursor: pointer;
+    height:7rem;
   }
 }
