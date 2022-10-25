@@ -7,12 +7,14 @@ function Header() {
   return (
     <div className={style.headinit}>
       <img src={logo} className={style.logo} alt="Logo de la société" />
+      <div className={style.headnav}>
       <Link className={style.choix} to="/">
         Accueil
       </Link>
       <Link className={style.choix} to="/a-propos">
         À propos
       </Link>
+      </div>
     </div>
   );
 }

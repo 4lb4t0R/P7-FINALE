@@ -25,3 +25,18 @@
   line-height: 142.6%;
   color: #ff6060;
 }
+
+@media screen and (min-width: 992px) {
+  .logo{
+    margin: 20px 50px;
+    width: 245px;
+    height: 100px;
+  }
+
+  .headnav{
+    margin-top: 35px;
+    margin-right: 35px;
+    font-size: x-large;
+  }
+}
+  

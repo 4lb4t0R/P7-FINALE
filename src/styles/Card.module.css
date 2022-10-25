@@ -55,6 +55,16 @@
 }
 
 @media (min-width: 992px) {
+
+  .list {display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
   .card {
     width: 340px;
     height: 340px;
@@ -65,10 +75,7 @@
     height: 340px;
   }
 
-  .list {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
+  
 
   .degrade :hover {
     visibility: visible;

@@ -1,11 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import style from "../styles/Card.module.css";
 import  logementsData  from "../datas/logements";
-import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
-    <ul className="style.list">
+    <ul className={style.list}>
       {logementsData.map((logement) => (
         <li key={logement.id}>
           <Link to={`/page-logement/${logement.id}`}>
