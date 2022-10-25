@@ -1,0 +1,64 @@
+.diverreur {
+  background: #e5e5e5;
+}
+.nbcontain {
+  position: absolute;
+  width: 198px;
+  height: 99px;
+  left: 88px;
+  top: 262px;
+}
+
+.nberreur {
+  position: absolute;
+  left: 10%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 142.6%;
+  /* or 137px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ff6060;
+}
+
+.msgerreur {
+  position: absolute;
+  left: 15.2%;
+  right: 15.47%;
+  top: 62.81%;
+  bottom: 47.78%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  /* or 26px */
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #ff6060;
+}
+
+.retourerreur {
+  position: absolute;
+  left: 27.27%;
+  right: 20.8%;
+  top: 78.6%;
+  bottom: 28.94%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142.6%;
+  /* identical to box height, or 20px */
+  display: flex;
+  align-items: flex-end;
+  text-decoration-line: underline;
+  color: #ff6060;
+}

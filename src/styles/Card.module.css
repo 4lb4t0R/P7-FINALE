@@ -1,0 +1,76 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f7f7f7;
+  border-radius: 25px;
+  padding: 25px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: white;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 335px;
+  height: 255px;
+  margin: 27px 25px;
+  border-radius: 10px;
+}
+.cardimage {
+  width: 335px;
+  height: 255px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cardsubtitle {
+  height: 68px;
+  width: 340px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: -80px;
+}
+.cardtitle {
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  color: white;
+  width: 238px;
+}
+
+.degrade {
+  background: linear-gradient(180deg, #ff6060 0%, rgba(0, 0, 0, 0.5) 100%);
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  position: relative;
+  top: 100px;
+  padding-top: 340px;
+  visibility: hidden;
+}
+
+@media (min-width: 992px) {
+  .card {
+    width: 340px;
+    height: 340px;
+  }
+
+  .cardimage {
+    width: 340px;
+    height: 340px;
+  }
+
+  .list {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .degrade :hover {
+    visibility: visible;
+  }
+}

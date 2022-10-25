@@ -1,0 +1,29 @@
+.host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hostname {
+  font-size: 12px;
+}
+.hostpicture {
+  height: 32px;
+  width: 32px;
+  margin-top: 16, 5px;
+  border-radius: 50px;
+
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .hostname {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .hostpicture {
+    height: 64px;
+    width: 64px;
+    margin-top: 25px;
+  }
+}

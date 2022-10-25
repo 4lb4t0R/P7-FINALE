@@ -1,0 +1,91 @@
+.collapse {
+  height: 47px;
+  border-radius: 5px;
+  background-color: #ff6060;
+  align-self: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 18px;
+  padding-right: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.collapseflex {
+  display: flex;
+  flex-direction: row;
+}
+
+.collapsetext {
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.collapsearrow {
+  height: 15px;
+  width: 9px;
+}
+
+.collapsearrowturn {
+  transform: rotate(180deg);
+}
+
+.collapsedescription {
+  font-weight: 400;
+  background: #f7f7f7;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 18px;
+  padding-bottom: 1px;
+  padding-top: 10px;
+  position: relative;
+  top: -15px;
+  transition: height 300ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.displaynone {
+  display: none;
+}
+
+.equipements {
+  width: 335px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 33px;
+}
+
+.descriptionlogement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+@media screen and (min-width: 992px) {
+  .collapse {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  .collapsetext {
+    font-size: 24px;
+  }
+
+  .collapsedescription {
+    font-size: 24px;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  .equipements {
+    width: 100%;
+  }
+  .descriptionlogement {
+    flex-direction: row;
+  }
+}

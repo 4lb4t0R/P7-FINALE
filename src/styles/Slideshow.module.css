@@ -1,0 +1,43 @@
+.slides {
+  height: 255px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.slideshow {
+  display: flex;
+  align-items: center;
+
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.arrowleft {
+  height: 20px;
+  background-color: blueviolet;
+  position: relative;
+  right: -20px;
+}
+.arrowright {
+  height: 20px;
+  background-color: blueviolet;
+  position: relative;
+  left: -20px;
+}
+
+@media screen and (min-width: 992px) {
+  .slides {
+    height: 415px;
+  }
+
+  .arrowleft {
+    position: relative;
+    right: -50px;
+    cursor: pointer;
+  }
+  .arrowright {
+    position: relative;
+    left: -50px;
+    cursor: pointer;
+  }
+}

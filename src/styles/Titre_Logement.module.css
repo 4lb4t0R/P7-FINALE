@@ -1,0 +1,18 @@
+.titre {
+  font-size: 18px;
+}
+.location {
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .titre {
+    font-weight: 500;
+    font-size: 36px;
+  }
+
+  .location {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}

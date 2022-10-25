@@ -1,0 +1,27 @@
+.headinit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 20px 20px;
+  width: 145px;
+  height: 45px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 140px;
+}
+
+.choix {
+  margin: 35px 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  color: #ff6060;
+}

@@ -1,0 +1,23 @@
+.tag {
+  font-size: 10px;
+}
+
+@media (min-width: 992px) {
+  .tag {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    height: 25px;
+    background-color: #ff6060;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .tags {
+    display: flex;
+    flex-direction: row;
+  }
+}
