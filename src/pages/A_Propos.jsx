@@ -6,7 +6,6 @@ const A_Propos = () => {
   return (
     <Layout>
       <Banner />
-
       <About />
     </Layout>
   );
