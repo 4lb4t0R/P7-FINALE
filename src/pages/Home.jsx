@@ -6,6 +6,7 @@ import Card from "../components/Card";
 
 const Home = () => {
   return (
+    
     <Layout>
       <Banner />
       <Card />

@@ -3,6 +3,7 @@
   border-radius: 25px;
   margin-left: 20px;
   margin-right: 20px;
+  background-image: url("../assets/accueil-desktop.png");
   object-fit: cover;
 }
 
@@ -32,13 +33,9 @@
     margin-right: 100px;
   }
 
-  .bannerimage {
-    background-image: url("../assets/accueil-fond.png");
-    object-fit: contain;
-  }
-
   .bannerapimage {
-    background-image: url("../assets/IMG.png");
+    background-image: url("../assets/accueil-desktop.png");
+    background-size: contain;
     margin-top: 25px;
     margin-bottom: 25px;
   }

@@ -3,7 +3,7 @@ import style from "../styles/Accueil_Banner.module.css";
 
 const Accueil_Banner = () => {
   return (
-    <div className={style.bannerapimage}>
+    <div className={style.banner&&style.bannerapimage}>
       <h1 className={style.hometitle}>
         {" "}
         Chez vous, <br className={style.display} />
