@@ -1,9 +1,10 @@
-import image from "../assets/about-mobile.png";
+import React from "react";
+import style from "../styles/About_Banner.module.css"
 
 function A_Banner() {
   return (
-    <div>
-      <img src={image} alt="forêt apaisante" />
+    <div className={style.banner && style.container}>
+      
     </div>
   );
 }

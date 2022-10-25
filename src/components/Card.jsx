@@ -20,7 +20,6 @@ const Card = () => {
               <div className={style.cardsubtitle}>
                 <h2 className={style.cardtitle}>{logement.title}</h2>
               </div>
-              <span className={style.degrade}></span>
             </div>
           </Link>
         </li>

@@ -9,6 +9,7 @@
   margin-left: 20px;
   margin-right: 20px;
   list-style-type: none;
+  text-decoration: none;
 }
 .card {
   display: flex;
@@ -19,6 +20,7 @@
   height: 255px;
   margin: 27px 25px;
   border-radius: 10px;
+  position: relative;
 }
 .cardimage {
   width: 335px;
@@ -31,8 +33,10 @@
   height: 68px;
   width: 340px;
   background-color: rgba(0, 0, 0, 0.3);
-  position: relative;
-  top: -80px;
+  position: absolute;
+  bottom:1px;
+  border-radius: 10px;
+  
 }
 .cardtitle {
   margin-left: 20px;
@@ -41,22 +45,15 @@
   line-height: 142.6%;
   color: white;
   width: 238px;
+  
 }
 
-.degrade {
-  background: linear-gradient(180deg, #ff6060 0%, rgba(0, 0, 0, 0.5) 100%);
-  width: 340px;
-  height: 340px;
-  border-radius: 10px;
-  position: relative;
-  top: 100px;
-  padding-top: 340px;
-  visibility: hidden;
-}
+
 
 @media (min-width: 992px) {
 
-  .list {display: flex;
+  .list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -77,7 +74,5 @@
 
   
 
-  .degrade :hover {
-    visibility: visible;
-  }
+  
 }

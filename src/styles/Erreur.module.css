@@ -61,6 +61,7 @@
   align-items: flex-end;
   text-decoration-line: underline;
   color: #ff6060;
+  text-decoration: none;
 }
 
 @media screen and (min-width:992px){
@@ -80,5 +81,9 @@
     font-size: 30px ;
     margin-left: 5rem;
     text-align: center;
+    text-decoration: none;
+  }
+  .retourerreur:focus{
+    text-decoration: underline;
   }
 }

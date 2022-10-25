@@ -9,7 +9,7 @@ import Slideshow from "../components/Slideshow.jsx";
 
 const FicheLogement = () => {
   const h = useAppartment();
-   console.log({h})
+   
   return (
     <Layout>
       <Slideshow slides={h.appartment ? h.appartment.pictures : []} />
