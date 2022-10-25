@@ -20,7 +20,7 @@ const FicheLogement = () => {
               <div>
                 <h1 className={style.title}>{h.appartment?.title}</h1>
                 <p className={style.location}>{h.appartment?.location}</p>
-                <ul className={style.ulmargin.tags}>
+                <ul className={style.ulmargin && style.tags}>
                   {h.appartment?.tags &&
                     h.appartment?.tags.map((tag) => (
                       <li key={tag} className={style.tag}>
