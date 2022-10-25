@@ -62,3 +62,23 @@
   text-decoration-line: underline;
   color: #ff6060;
 }
+
+@media screen and (min-width:992px){
+  .nberreur{
+    justify-content: center;
+    left: 330%;
+    top: 100%;
+    font-size: 196px;
+  }
+  .msgerreur{
+    font-size:30px;
+    margin-left:8rem;
+    text-align:center;
+  }
+
+  .retourerreur{
+    font-size: 30px ;
+    margin-left: 5rem;
+    text-align: center;
+  }
+}
