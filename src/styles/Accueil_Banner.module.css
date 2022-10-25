@@ -26,7 +26,7 @@
   display: block;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .banner {
     margin-left: 100px;
     margin-right: 100px;
@@ -34,6 +34,7 @@
 
   .bannerimage {
     background-image: url("../assets/accueil-fond.png");
+    object-fit: contain;
   }
 
   .bannerapimage {
@@ -47,6 +48,8 @@
   }
 
   .hometitle {
+    width:85%;
+    margin-left: 100px;
     padding-top: 90px;
     text-align: center;
     font-size: 48px;
