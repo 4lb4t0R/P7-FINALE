@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../pages/Layout";
 import StarRating from "../components/Notation";
-import Collapse from "../components/About";
+import Collapse from "../components/Collapse";
 import { useAppartment } from "../components/Hook_Logement";
 import "../datas/logements";
 import style from "../styles/Page_Logement.module.css";

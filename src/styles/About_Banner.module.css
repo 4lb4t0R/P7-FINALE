@@ -1,24 +1,21 @@
-.banner{
-background-image: url("../assets/about-mobile.png");
-background-size: contain;
+
+.container {
+    height: 223px;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-right: 20px; background-image: url("../assets/about-mobile.png");
+    background-size: cover;
 }
 
-.container{
-  height: 223px;
-  border-radius: 25px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+
 
 @media screen and (min-width:992px){
 
     .container {
         margin-left: 100px;
         margin-right: 100px;
-    }
-
-    .banner{
         background-image: url("../assets/about-desktop.png");
-        background-size: contain;
+        background-size: cover;
+        margin-top:3rem;
     }
 }
