@@ -7,12 +7,12 @@ export default function Notation({score}) {
   
 
     return (
-      <div className="stars">
+      <div>
         {[...Array(5)].map((star, i) => {
           const ratingValue = i + 1;
           return (
             <label>
-              <img className={style.starz}src={ratingValue <= score ? starOn : starOff} alt="star" />
+              <img className={style.starz} src={ratingValue <= score ? starOn : starOff} alt="note de l'hôte" />
             </label>
           );
         })}
