@@ -1,6 +1,7 @@
 import React  from "react"
 import starOn from "../assets/star_rate-24-red.svg";
 import starOff from "../assets/star_rate-24-grey.svg";
+import style from "../styles/Notation.module.css"
 
 export default function Notation({score}) {
   
@@ -11,7 +12,7 @@ export default function Notation({score}) {
           const ratingValue = i + 1;
           return (
             <label>
-              <img src={ratingValue <= score ? starOn : starOff} alt="star" />
+              <img className={style.starz}src={ratingValue <= score ? starOn : starOff} alt="star" />
             </label>
           );
         })}

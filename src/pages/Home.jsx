@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "./Layout";
-import Banner from "../components/Accueil_Banner";
+import Banner from "../components/AccueilBanner";
 import Card from "../components/Card";
 
 const Home = () => {

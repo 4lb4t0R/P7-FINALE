@@ -1,11 +1,11 @@
 import React from "react";
-import Layout from "../pages/Layout";
+import Layout from "./Layout";
 import StarRating from "../components/Notation";
-import Collapse_Foyers from "../components/Collapse_Foyers";
-import Collapse_Matos from "../components/Collapse_Matos"
-import { useAppartment } from "../components/Hook_Logement";
+import Collapse_Foyers from "../components/CollapseFoyers";
+import Collapse_Matos from "../components/CollapseMatos"
+import { useAppartment } from "../Hook/HookLogement.hook";
 import "../datas/logements";
-import style from "../styles/Page_Logement.module.css";
+import style from "../styles/PageLogement.module.css";
 import Slideshow from "../components/Slideshow.jsx";
 
 const FicheLogement = () => {
@@ -21,7 +21,7 @@ const FicheLogement = () => {
               <div>
                 <h1 className={style.title}>{h.appartment?.title}</h1>
                 <p className={style.location}>{h.appartment?.location}</p>
-                <ul className={style.ulmargin && style.tags}>
+                <ul className= {`${style.ulmargin} ${style.tags}`}>
                   {h.appartment?.tags &&
                     h.appartment?.tags.map((tag) => (
                       <li key={tag} className={style.tag}>
@@ -49,10 +49,14 @@ const FicheLogement = () => {
           </div>
         </div>
         <div className={style.descriptionlogement}>
+          <div className={style.hocuspocus}>
           <div className={style.collapselogement}>
             <Collapse_Foyers desc={h.appartment?.description}/>
+            </div>
+            <div className={style.collapselogement}>
             <Collapse_Matos equip={h.appartment?.equipments}/>
-          </div>
+            </div>
+            </div>
         </div>
       </div>
     </Layout>

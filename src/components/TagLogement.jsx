@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../styles/Tag_Logement";
+import style from "../styles/TagLogement";
 import  logementsData  from "../datas/logements.json";
 import { useParams } from "react-router-dom";
 

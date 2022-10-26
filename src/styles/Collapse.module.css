@@ -3,7 +3,7 @@
   border-radius: 5px;
   background-color: #ff6060;
   align-self: center;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 15px;
   margin-left: 20px;
   margin-right: 20px;
@@ -38,6 +38,7 @@
 .collapsedescription {
   font-weight: 400;
   background: #f7f7f7;
+  color: #ff6060;
   border-radius: 5px;
   font-size: 12px;
   margin-left: 20px;
@@ -73,18 +74,31 @@
   .collapse {
     margin-left: 180px;
     margin-right: 180px;
+    margin-top: 50px;
   }
+
   .collapsetext {
     font-size: 24px;
   }
+
+  .collapsearrow {
+    height: 27px;
+    width: 16px;
+  }
+
+  
 
   .collapsedescription {
     font-size: 24px;
     margin-left: 180px;
     margin-right: 180px;
+    padding-left: 18px;
+    padding-bottom: 1px;
+    padding-top: 10px;
+    position: relative;
   }
   .equipements {
-    width: 100%;
+    width: 70%;
   }
   .descriptionlogement {
     flex-direction: row;

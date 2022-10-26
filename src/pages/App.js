@@ -2,8 +2,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./Home";
-import APropos from "./A_Propos";
-import PageLogement from "./Page_Logement";
+import APropos from "./APropos";
+import PageLogement from "./PageLogement";
 import Error from "./Error";
 
 function App() {

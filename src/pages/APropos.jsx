@@ -1,6 +1,6 @@
 import Layout from "./Layout";
 import Collapse from "../components/Collapse";
-import Banner from "../components/About_Banner";
+import Banner from "../components/AboutBanner";
 import textsList from "../datas/about";
 
 const A_Propos = () => {
