@@ -24,16 +24,16 @@ const Collapse_Foyers = () => {
         .map((logementFiltre, index) => (
           <div key={index}>
             <div
-              className={style.collapse.equipements}
+              className={style.collapse && style.equipements}
               onClick={() => toggleCollapse(index)}
             >
-              <p className={style.collapsetext.equipements}>Description</p>
+              <p className={style.collapsetext && style.equipements}>Description</p>
               <img
                 src={vector}
                 alt="flêche du haut"
                 className={
                   isOpen === index
-                    ? style.collapsearrow.collapsearrowturn
+                    ? style.collapsearrow && style.collapsearrowturn
                     : style.collapsearrow
                 }
               />
@@ -41,7 +41,7 @@ const Collapse_Foyers = () => {
             <div
               className={
                 isOpen === index
-                  ? style.collapsedescription.equipements
+                  ? style.collapsedescription && style.equipements
                   : style.displaynone
               }
             >
