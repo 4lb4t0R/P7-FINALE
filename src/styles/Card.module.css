@@ -2,10 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: #e5e5e5;
   border-radius: 25px;
   padding: 25px;
-  margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
   list-style-type: none;
@@ -31,7 +29,7 @@
 
 .cardsubtitle {
   height: 68px;
-  width: 340px;
+  width: 335px;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   bottom:1px;
@@ -50,7 +48,7 @@
 
 
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
 
   .list {
     display: flex;
@@ -60,6 +58,8 @@
     justify-content: center;
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 40px;
+    background: #e5e5e5;
   }
 
   .card {
