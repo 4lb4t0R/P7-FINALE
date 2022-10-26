@@ -4,7 +4,7 @@ import style from "../styles/AccueilBanner.module.css";
 const Accueil_Banner = () => {
   return (
     <div className={style.banner}>
-      <img className={style.bannerapimage}/>
+      <img className={style.bannerapimage} alt="nature et mantra du site"/>
       <h1 className={style.hometitle}>
         {" "}
         Chez vous, <br className={style.display} />
