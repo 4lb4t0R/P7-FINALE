@@ -3,7 +3,7 @@ import style from "../styles/Collapse.module.css";
 import vector from "../assets/Vector.svg";
 import textsList from "../datas/about";
 
-const Collapse = ({description,title=[]}) => {
+const Collapse = ({datas}) => {
   const [isOpen, setIsOpen] = useState(-1);
 
   function toggleCollapse(index) {
@@ -15,17 +15,16 @@ const Collapse = ({description,title=[]}) => {
   }
   return (
     <div>
-      <p>{title}</p>
-      {title.map((description, index) => (
-        <div key={index}>
-          <div className={style.collapse} onClick={() => toggleCollapse(index)}>
-            <h2 className={style.collapsetext}>{description}</h2>
+      {datas.map((data) => (
+        <div key={data.id}>
+          <div className={style.collapse} onClick={() => toggleCollapse(data.id)}>
+            <h2 className={style.collapsetext}>{data.title}</h2>
             <div>
               <img
                 src={vector}
                 alt="flèche"
                 className={
-                  isOpen === index
+                  isOpen === data.id
                     ? style.collapsearrow && style.collapsearrowturn
                     : style.collapsearrow
                 }
@@ -34,10 +33,10 @@ const Collapse = ({description,title=[]}) => {
           </div>
           <div
             className={
-              isOpen === index ? style.collapsedescription : style.displaynone
+              isOpen === data.id ? style.collapsedescription : style.displaynone
             }
           >
-            
+            <p>{data.description}</p>
           </div>
         </div>
       ))}

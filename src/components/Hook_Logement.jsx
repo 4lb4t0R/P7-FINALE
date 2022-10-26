@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import data from "../datas/logements";
+import data from "../datas/logements.json";
 
 export const useAppartment = () => {
   const params = useParams();

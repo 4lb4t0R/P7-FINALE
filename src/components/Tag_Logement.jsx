@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../styles/Tag_Logement";
-import { logementsData } from "../data.js";
+import  logementsData  from "../datas/logements.json";
 import { useParams } from "react-router-dom";
 
 const Tag = () => {

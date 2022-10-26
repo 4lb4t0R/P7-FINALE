@@ -1,7 +1,7 @@
 import style from "../styles/Host.module.css";
 import React from "react";
 import { useParams } from "react-router-dom";
-import { logementsData } from "../datas/logements";
+import  logementsData  from "../datas/logements.json";
 
 const Host = () => {
   const params = useParams();

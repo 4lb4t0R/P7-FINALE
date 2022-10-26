@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../styles/Titre_Logement";
-import { logementsData } from "../datas/logements";
+import { logementsData } from "../datas/logements.json";
 import { useParams } from "react-router-dom";
 
 const Titre_Logement = () => {
