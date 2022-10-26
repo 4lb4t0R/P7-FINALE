@@ -1,16 +1,16 @@
 import React from "react";
 import Layout from "../pages/Layout";
 import StarRating from "../components/Notation";
+import Collapse_Foyers from "../components/Collapse_Foyers";
+import Collapse_Matos from "../components/Collapse_Matos"
 import { useAppartment } from "../components/Hook_Logement";
-
+import "../datas/logements";
 import style from "../styles/Page_Logement.module.css";
 import Slideshow from "../components/Slideshow.jsx";
-import Collapse_Foyers from "../components/Collapse_Foyers";
-import Collapse_Matos from "../components/Collapse_Matos";
 
 const FicheLogement = () => {
   const h = useAppartment();
-   console.log(h)
+   
   return (
     <Layout>
       <Slideshow slides={h.appartment ? h.appartment.pictures : []} />
@@ -43,7 +43,7 @@ const FicheLogement = () => {
             </div>
             <div>
               <StarRating
-                score={parseInt(h.appartment?.rating)}
+                score={h.appartment ? parseInt(h.appartment.rating) : 0}
               />
             </div>
           </div>

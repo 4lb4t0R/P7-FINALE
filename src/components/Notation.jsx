@@ -1,25 +1,20 @@
-import React, { useState } from "react";
-import { Rating } from "react-simple-star-rating";
+import React  from "react"
+import starOn from "../assets/star_rate-24-red.svg";
+import starOff from "../assets/star_rate-24-grey.svg";
 
 export default function Notation({score}) {
-  console.log(score)
   
-  const [rating, setRating] = useState(score);
-  
-  // Catch Rating value
-  const handleRating = (rate) => {
-    setRating(rate);
-  };
 
-  return (
-    <div className="App">
-     
-      <Rating
-        fillColor="#FF6060"
-        initialValue={score}
-        onClick={handleRating}
-        
-      />
-    </div>
-  );
+    return (
+      <div className="stars">
+        {[...Array(5)].map((star, i) => {
+          const ratingValue = i + 1;
+          return (
+            <label>
+              <img src={ratingValue <= score ? starOn : starOff} alt="star" />
+            </label>
+          );
+        })}
+      </div>
+    );
 }

@@ -2,46 +2,59 @@
   height: 255px;
   border-radius: 25px;
   width: 100%;
+  object-fit: cover;
+  
 }
 
 .slideshow {
   display: flex;
-  align-items: center;
+  text-align: center;
   border-radius: 25px;
   margin-bottom: 20px;
-  width : 110%;
+  margin-top:0.5rem;
+  width : 100%;
+  object-fit: cover;
 }
 
 .arrowleft {
   height: 20px;
   position: relative;
   right: -20px;
+  bottom: -8rem;
 }
 .arrowright {
   height: 20px;
   position: relative;
   left: -20px;
+  bottom: -8rem;
 }
 
 @media screen and (min-width: 992px) {
+
   .slides {
     height: 415px;
   }
 
   .slideshow {
     justify-content: center;
+    height: 415px;
+    width: 1240px;
+    margin-left: 7.5rem;
+    
   }
 
   .arrowleft {
     position: relative;
-    right: -70px;
+    right: -170px;
     cursor: pointer;
-    height:7rem;
+    height:5rem;
+    bottom: -12rem;
   }
   .arrowright {
     position: relative;
-    left: -70px;
+    left: -50px;
     cursor: pointer;
-    height:7rem;
+    height:5rem;
+    bottom: -12rem;
   }
 }
