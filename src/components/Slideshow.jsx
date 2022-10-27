@@ -20,19 +20,24 @@ const Slideshow = ({ slides }) => {
   };
   return (
     <div className={style.slideshow}>
+
       <div onClick={goToPrevious}>
-        <img src={arrowLeft} alt="flèche gauche" className={style.arrowleft} />
+        <img src={arrowLeft} alt="flèche gauche" className={slides.length > 1 ? style.arrowleft : `${style.arrowleft} ${style.cache}`} />
       </div>
+
       <div>
-        
-            <img className={style.slideshow}  src={slides[currentIndex]} alt="image illustrative"/>
-         
+       <img className={style.slideshow}  src={slides[currentIndex]} alt="visuel illustratif"/>
       </div>
+
+      <p className={style.chiffre}>
+      {currentIndex + 1}/{slides.length}
+      </p>
+
       <div onClick={goToNext}>
         <img
           src={arrowRight}
           alt="flèche droite"
-          className={style.arrowright}
+          className={slides.length > 1 ? style.arrowright : `${style.arrowright} ${style.cache}`}
         />
       </div>
     </div>
