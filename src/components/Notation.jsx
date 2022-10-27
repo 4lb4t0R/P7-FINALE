@@ -13,7 +13,7 @@ export default function Notation({score}) {
           return (
             
               <img className={style.starz} src={ratingValue <= score ? starOn : starOff} alt="note de l'hôte" />
-            
+              
           );
         })}
       </div>
