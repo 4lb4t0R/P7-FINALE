@@ -27,8 +27,12 @@
 .arrowright {
   height: 20px;
   position: relative;
-  left: -20px;
+  left: -15px;
   bottom: -8rem;
+}
+
+.chiffre {
+  display: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -61,6 +65,7 @@
   }
 
   .chiffre {
+    display: block;
     color:white;
     font-size: 28px;
     position: relative;
