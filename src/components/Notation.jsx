@@ -12,7 +12,7 @@ export default function Notation({score}) {
           const ratingValue = i + 1;
           return (
             
-              <img className={style.starz} src={ratingValue <= score ? starOn : starOff} alt="note de l'hôte" />
+              <img key={i} className={style.starz} src={ratingValue <= score ? starOn : starOff} alt="note de l'hôte" />
               
           );
         })}
